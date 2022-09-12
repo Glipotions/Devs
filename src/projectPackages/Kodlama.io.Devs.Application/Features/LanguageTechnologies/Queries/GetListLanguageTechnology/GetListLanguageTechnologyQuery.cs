@@ -29,7 +29,7 @@ namespace Kodlama.io.Devs.Application.Features.LanguageTechnologies.Queries.GetL
             IPaginate<LanguageTechnology> languages = await _languageTechnologyRepository.GetListAsync
                 (index: request.PageRequest.Page,
                 size: request.PageRequest.PageSize,
-                cancellationToken:cancellationToken);
+                cancellationToken: cancellationToken);
 
             LanguageTechnologyListModel mappedLanguageTechnologyListModel = _mapper.Map<LanguageTechnologyListModel>(languages);
 

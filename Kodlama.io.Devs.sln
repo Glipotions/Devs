@@ -23,15 +23,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Security", "src\corePa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projectPackages", "projectPackages", "{61BCBDBA-E230-4CC2-8623-8BB7B54721AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Application", "src\projectPackages\Kodlama.io.Devs.Application\Kodlama.io.Devs.Application.csproj", "{38BDA89F-F45B-4F91-885D-5413E8C3FCA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Application", "src\projectPackages\Kodlama.io.Devs.Application\Kodlama.io.Devs.Application.csproj", "{38BDA89F-F45B-4F91-885D-5413E8C3FCA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Domain", "src\projectPackages\Kodlama.io.Devs.Domain\Kodlama.io.Devs.Domain.csproj", "{0EA3CCC1-A0EB-448C-9C30-03205499605A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Domain", "src\projectPackages\Kodlama.io.Devs.Domain\Kodlama.io.Devs.Domain.csproj", "{0EA3CCC1-A0EB-448C-9C30-03205499605A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Infrastructure", "src\projectPackages\Kodlama.io.Devs.Infrastructure\Kodlama.io.Devs.Infrastructure.csproj", "{57EA66CF-5730-4819-83D9-5319AEF7A974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Infrastructure", "src\projectPackages\Kodlama.io.Devs.Infrastructure\Kodlama.io.Devs.Infrastructure.csproj", "{57EA66CF-5730-4819-83D9-5319AEF7A974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Persistence", "src\projectPackages\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj", "{450D1A1F-E1DA-449A-9590-F1141FFBB214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Persistence", "src\projectPackages\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj", "{450D1A1F-E1DA-449A-9590-F1141FFBB214}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.WebAPI", "src\projectPackages\Kodlama.io.Devs.WebAPI\Kodlama.io.Devs.WebAPI.csproj", "{2A9B6E5F-E5CD-4CE8-9D1A-5EB70BB745A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.WebAPI", "src\projectPackages\Kodlama.io.Devs.WebAPI\Kodlama.io.Devs.WebAPI.csproj", "{2A9B6E5F-E5CD-4CE8-9D1A-5EB70BB745A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test\test.csproj", "{D2BB0603-BA9C-4092-9BD1-59B4321C2926}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{2A9B6E5F-E5CD-4CE8-9D1A-5EB70BB745A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A9B6E5F-E5CD-4CE8-9D1A-5EB70BB745A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A9B6E5F-E5CD-4CE8-9D1A-5EB70BB745A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BB0603-BA9C-4092-9BD1-59B4321C2926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BB0603-BA9C-4092-9BD1-59B4321C2926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BB0603-BA9C-4092-9BD1-59B4321C2926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BB0603-BA9C-4092-9BD1-59B4321C2926}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{57EA66CF-5730-4819-83D9-5319AEF7A974} = {61BCBDBA-E230-4CC2-8623-8BB7B54721AC}
 		{450D1A1F-E1DA-449A-9590-F1141FFBB214} = {61BCBDBA-E230-4CC2-8623-8BB7B54721AC}
 		{2A9B6E5F-E5CD-4CE8-9D1A-5EB70BB745A1} = {61BCBDBA-E230-4CC2-8623-8BB7B54721AC}
+		{D2BB0603-BA9C-4092-9BD1-59B4321C2926} = {9C1AA12E-7657-4DEA-B902-4610FB69B326}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA974BC6-2AD0-4BDA-A042-5EDCE2D2DDAA}

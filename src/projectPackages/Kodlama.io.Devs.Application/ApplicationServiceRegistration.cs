@@ -1,4 +1,7 @@
-﻿using Core.Application.Pipelines.Validation;
+﻿using Core.Application.Pipelines.Authorization;
+using Core.Application.Pipelines.Validation;
+using FluentValidation;
+using Kodlama.io.Devs.Application.Features.GithubProfiles.Rules;
 using Kodlama.io.Devs.Application.Features.Languages.Rules;
 using Kodlama.io.Devs.Application.Features.LanguageTechnologies.Rules;
 using MediatR;
@@ -16,8 +19,12 @@ namespace Kodlama.io.Devs.Application
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddScoped<LanguageBusinessRules>();
             services.AddScoped<LanguageTechnologyBusinessRules>();
+            services.AddScoped<GithubProfileBusinessRules>();
+            services.AddScoped<LanguageTechnologyBusinessRules>();
 
 
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
 
 
